@@ -1,0 +1,43 @@
+select,
+input {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 6rem;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  flex-wrap: wrap;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .submit-container {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    place-items: center;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .error-msg {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkred;
+  }
+}

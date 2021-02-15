@@ -1,0 +1,9 @@
+<div class="forecasts-container">
+  <h2>Weather in:</h2>
+  <div *ngFor="let forecast of forecasts$ | async; let i = index">
+    <div class="entry">
+      <span>{{ i + 1 }}.</span>
+      <app-forecast-entry [forecast]="forecast"></app-forecast-entry>
+    </div>
+  </div>
+</div>

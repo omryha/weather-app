@@ -1,0 +1,8 @@
+<div class="forecast">
+  <span>{{ forecast.name }}:</span>
+  <span>{{ forecast.main.temp }}</span>
+  <span>({{ forecast.weather[0].description }})</span>
+  <img
+    src="http://openweathermap.org/img/wn/{{ forecast.weather[0].icon }}@2x.png"
+  />
+</div>

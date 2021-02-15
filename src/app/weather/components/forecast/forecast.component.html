@@ -1,0 +1,8 @@
+<app-search
+  (searchEmitter)="getWeather($event)"
+  (createComponentEmitter)="emitForecast()"
+></app-search>
+<app-forecast
+  *ngIf="createChild"
+  (forecastEmitter)="emitForecast()"
+></app-forecast>
